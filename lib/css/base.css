@@ -1,0 +1,49 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+}
+
+.mb8 {
+    margin-bottom: 0.8rem;
+}
+
+.mb16 {
+    margin-bottom: 1.6rem;
+}
+
+.mb24 {
+    margin-bottom: 2.4rem;
+}
+
+.mb32 {
+    margin-bottom: 3.2rem;
+}
+
+.mb40 {
+    margin-bottom: 4rem;
+}
+
+
+.mt8 {
+    margin-top: 0.8rem;
+}
+
+.mt16 {
+    margin-top: 1.6rem;
+}
+
+.mt24 {
+    margin-top: 2.4rem;
+}
+
+.mt32 {
+    margin-top: 3.2rem;
+}
+
+.mt40 {
+    margin-top: 4rem;
+}
