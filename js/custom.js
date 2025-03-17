@@ -1,9 +1,10 @@
 $(function () {
 
     $('.main_container').fullpage({
-        // anchors: ['intro', 'service', 'center', 'news', 'video', 'customer'],
-        anchors: ['intro', 'service', 'center', 'news',],
+        anchors: ['intro', 'service', 'center', 'news', 'footer'],
         scrollOverflow: false,
+        fixedElements: '.header, .menu_lnk',
+
         afterLoad: function (o, ds) {
             let idx = ds.index;
 

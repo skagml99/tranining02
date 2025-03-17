@@ -15,7 +15,7 @@
 }
 
 .header.on {
-    border-bottom: 1px solid var(--line-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header .hd_wrap {
@@ -596,4 +596,185 @@
     line-height: 1.5;
     text-align: center;
     word-break: keep-all;
+}
+
+.footer {
+    min-height: 40rem;
+}
+
+.footer .footer_notice {
+    padding: 8rem 0;
+}
+
+.footer .footer_notice .inner {
+    display: flex;
+    gap: 12rem;
+}
+
+.footer .footer_notice .inner .notice {
+    flex: 1;
+}
+
+.footer .footer_notice .inner .notice h2 {
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.footer .footer_notice .inner .notice h2 a {
+    float: right;
+
+    font-size: 1.4rem;
+    color: var(--w-color);
+    background: var(--line-color);
+
+    padding: 0.8rem;
+}
+
+.footer .footer_notice .inner .notice ul a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 4rem;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.footer .footer_notice .inner .notice ul a strong {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer .footer_notice .inner .lnk {
+    flex: 1;
+
+    display: flex;
+    gap: 1.6rem;
+}
+
+.footer .footer_notice .inner .lnk a {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+    color: var(--w-color);
+}
+
+.footer .footer_notice .inner .lnk a strong {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.footer .footer_notice .inner .lnk a i {
+    margin-top: auto;
+    text-align: right;
+
+    margin-bottom: 2.4rem;
+}
+
+.footer .footer_customer {
+    border-top: 1px solid var(--line-color);
+}
+
+.footer .footer_customer ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    height: 8rem;
+}
+
+.footer .footer_customer ul li {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.footer .footer_customer ul li strong {
+    font-weight: 600;
+}
+
+.footer .footer_customer ul li i {
+    background: var(--b-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.footer .footer_sns {
+    background: #444;
+}
+
+.footer .footer_sns .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.footer .footer_sns .inner ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer .footer_sns .inner ul li {
+    position: relative;
+}
+
+.footer .footer_sns .inner ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+
+}
+
+.footer .footer_sns .inner ul a {
+    color: var(--w-color);
+    font-size: 1.4rem;
+}
+
+.footer .footer_copy {
+    border-top: 1px solid #555;
+    background: var(--b-color);
+    padding: 4rem 0;
+    color: var(--w-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+.footer .footer_copy ul {
+    display: flex;
+    gap: 2.4rem;
+
+    margin-bottom: 0.8rem;
+}
+
+.footer .footer_copy ul li {
+    position: relative;
+}
+
+.footer .footer_copy ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.2rem;
+    transform: translate(0, -50%);
+
+    width: 1px;
+    height: 0.5rem;
+
+    background: var(--line-color);
+}
+
+.footer .footer_copy address {
+    margin-top: 2.4rem;
 }
